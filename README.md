@@ -3,6 +3,30 @@
 ## Instruction
 Here we propose our Off-Detector to facilitate the CRISPR-edited amplicon sequencing data analysis, with functions that existing tools are not able to provide. Off-Detector brings the following five key innovations: first, sample-specific reference sequences are calculated and used in mutant calling; second, functional annotations of CRISPR/Cas-induced variants are added, especially pathogenic variants; third, a batch mode is designed for comparing editing outcomes of multiple amplicons; fourth, a CRISPR/Cas-genome-editing-outcome database is provided, sharing editing outcomes of on-target sites and their corresponding off-target sites with the consent of data uploaders; fifth, processing memory and time are optimized allowing for hundreds of amplicons’ sequencing data.
 
+## System requirements
+
+## Installation Guide 
+Download and install Anaconda from https://www.anaconda.com/products/individual
+Python and packages
+pip install pyfaidx==0.5.9
+pip install biopython
+pip install weblogo
+conda install -y bowtie2
+
+Install fastp 
+wget http://opengene.org/fastp/fastp
+chmod a+x ./fastp
+
+Install Annovar
+http://download.openbioinformatics.org/annovar_download_form.php
+perl annotate_variation.pl -downdb -webfrom annovar avdblist humandb/ -buildver hg38
+perl annotate_variation.pl -buildver hg38 -downdb -webfrom annovar refGene humandb/
+perl annotate_variation.pl -buildver hg38 -downdb -webfrom annovar clinvar_20190305 humandb/ 
+
+Install blast
+
+Install samtools
+
 ## Demo
 Demo data could be downloaded in the directory Off-detector/data/ including treated group sequencing data (e.1.fq.gz and e.2.fq.gz , paired-end sequencing) and control group sequencing data (b.1.fq.gz and b.2.fq.gz, paired-end sequencing). Demo configure file could be downloaded in the directory Off-detector/amplicons.
 

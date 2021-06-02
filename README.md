@@ -14,8 +14,8 @@ pip install weblogo
 conda install -y bowtie2
 
 Install fastp 
-wget http://opengene.org/fastp/fastp
-chmod a+x ./fastp
+wget http://opengene.org/fastp/fastp  
+chmod a+x ./fastp  
 
 Install Annovar
 http://download.openbioinformatics.org/annovar_download_form.php  

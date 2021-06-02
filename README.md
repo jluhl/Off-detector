@@ -7,18 +7,17 @@ Here we propose our Off-Detector to facilitate the CRISPR-edited amplicon sequen
 
 ## Installation Guide 
 Download and install Anaconda from https://www.anaconda.com/products/individual  
-Python and packages  
+Python and packages    
 pip install pyfaidx==0.5.9  
 pip install biopython  
 pip install weblogo  
-conda install -y bowtie2
+conda install -y bowtie2  
 
-Install fastp 
+Install fastp  
 wget http://opengene.org/fastp/fastp  
 chmod a+x ./fastp  
 
-Install Annovar
-http://download.openbioinformatics.org/annovar_download_form.php  
+Download and install Annovar from http://download.openbioinformatics.org/annovar_download_form.php  
 perl annotate_variation.pl -downdb -webfrom annovar avdblist humandb/ -buildver hg38  
 perl annotate_variation.pl -buildver hg38 -downdb -webfrom annovar refGene humandb/  
 perl annotate_variation.pl -buildver hg38 -downdb -webfrom annovar clinvar_20190305 humandb/  

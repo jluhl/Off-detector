@@ -7,10 +7,10 @@ Here we propose our Off-Detector to facilitate the CRISPR-edited amplicon sequen
 
 ## Installation Guide 
 Download and install Anaconda from https://www.anaconda.com/products/individual  
-Python and packages
-pip install pyfaidx==0.5.9
-pip install biopython
-pip install weblogo
+Python and packages  
+pip install pyfaidx==0.5.9  
+pip install biopython  
+pip install weblogo  
 conda install -y bowtie2
 
 Install fastp 
